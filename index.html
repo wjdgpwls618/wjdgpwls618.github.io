@@ -17,12 +17,13 @@
     		text-align:center;
     	}    
     	
+    	/* #은 아이디 */
     	#myphoto, #myinfo {
     		background-color:#B7F0D9;
     		border: 2px solid #333333;
     	}
     
-	    	#myphoto > img {
+	    	#myphoto > img {	/* myphoto 아래 img*/
 	    		width:640px;
 	    		border-top:4px solid #666666;
 	    		border-right:4px dashed #666666;
@@ -30,7 +31,28 @@
 	    		border-left:4px double #666666;
 	    		margin:30px;
 	    	} /* 밑에 있는 애니까 들여쓰기 해놓으면 더 보기 좋 */
-    
+    	
+    	#myinfo{
+    		text-align:left;
+    	}
+    		#myinfo > ol {
+    			margin:30px 0 30px 130px;
+    			list-style:square;
+    		}
+    		#myinfo > ol > li{
+    			padding:5px;
+    			font-size:1.4em;
+    		}
+    		#myinfo > ol > li > span.label {
+    			text-decoration:underline;
+    			color:#ff0000;
+    			font-family:"돋움체";
+    		}
+    		#myinfo > ol > li > span.content {
+    			text-decoration:bold;
+    			color:#00ff00;
+    			font-family:"궁서체";
+    		}
     </style>
 </head>
 <body>
@@ -40,6 +62,24 @@
 			     title="우리 이쁜 경수">
 		</div>		
 		<div id="myinfo">
+			<or>
+				<li> 
+					<span class="label">이&nbsp;&nbsp;&nbsp;&nbsp;름</span> 
+					<span class="content">정혜진</span> 
+				</li>
+				<li>
+					<span class="label">이&nbsp;메&nbsp;일 </span> 
+					<span class="content">theamabile@gmail.com</span> 
+				</li>
+				<li>
+					<span class="label">취&nbsp;&nbsp;&nbsp;&nbsp;미</span>  
+					<span class="content">책 읽기, 웹서핑</span> 
+				</li>
+				<li>
+					<span class="label">선호하는 언어</span> 
+					<span class="content">자바, C#, C언어</span> 
+				</li>
+			</or>
 		</div>
 	</div>
 
